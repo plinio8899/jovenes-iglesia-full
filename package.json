@@ -8,8 +8,11 @@
     "client",
     "server"
   ],
+  "engines": {
+    "npm": "9.6.4"
+  },
   "scripts": {
-    "build": "npm run build --workspace=client",
+    "build": "SKIP_PREFLIGHT_CHECK=true npm run build --workspace=client",
     "start": "npm run start --workspace=server"
   },
   "dependencies": {
