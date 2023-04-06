@@ -25,6 +25,7 @@ export function setPoints() {
     app.get("/h-points", async (req, res) => {
         try {
             const data = await point_agg.find({});
+            res.setHeader('Accept-Encoding', 'gzip, compress, br')
             res.send({data})
         } catch (error) {
             console.log(error)
@@ -49,6 +50,7 @@ export function setPointsM() {
     app.get('/m-points', async (req, res) => {
         try {
             const data = await point_agg_m.find({});
+            res.setHeader('Accept-Encoding', 'gzip, compress, br')
             res.send({data})
         } catch (error) {
             console.log(`Error: ${error}`)
