@@ -1,6 +1,6 @@
 import { defineConfig } from 'vite'
 import react from '@vitejs/plugin-react'
-import { minify } from 'css-minimizer-webpack-plugin';
+import CssMinimizerPlugin from 'css-minimizer-webpack-plugin';
 
 // https://vitejs.dev/config/
 export default defineConfig({
@@ -10,7 +10,7 @@ export default defineConfig({
     rollupOptions: {
       plugins: [
         // ...otros complementos que estés utilizando
-        minify(),
+        new CssMinimizerPlugin().minimize,
       ],
     },
   },
