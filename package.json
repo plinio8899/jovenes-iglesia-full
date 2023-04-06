@@ -35,5 +35,8 @@
   },
   "keywords": [],
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "css-minimizer-webpack-plugin": "^5.0.0"
+  }
 }
