@@ -13,10 +13,10 @@ export function Marcador(){
         .then((res) => res.json())
         .then((data) => {
             for(let x=0; x<data.data.length;x++){
-               let xl = data.data[x].number
-               mas = mas + xl
-               
-            }         
+                let xl = data.data[x].number
+                mas = mas + xl
+
+            }
             let variable = Math.floor(mas)
             setTodos(variable)
             setLoading(false) // se actualiza el estado de loading a "false" cuando se obtienen los datos

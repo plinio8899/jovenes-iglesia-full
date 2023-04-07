@@ -7647,9 +7647,9 @@ function Header() {
     ] }) }),
     showMenu && /* @__PURE__ */ jsxs("div", { className: "mobile-menu", children: [
       /* @__PURE__ */ jsx("div", { className: "nav-links-mobile", children: /* @__PURE__ */ jsxs("ul", { children: [
-        /* @__PURE__ */ jsx("li", { children: /* @__PURE__ */ jsx("a", { href: "https://www.facebook.com/ibpuertadelcielo", target: "_blank", className: activeOption === "option1" ? "active" : "", onClick: () => handleOptionClick("option1"), children: "Siguenos" }) }),
-        /* @__PURE__ */ jsx("li", { children: /* @__PURE__ */ jsx("a", { href: "https://chat.whatsapp.com/ImgZBsoO6WDGvn4UeaS5eP", target: "_blank", className: activeOption === "option2" ? "active" : "", onClick: () => handleOptionClick("option2"), children: "Grupo de whatsapp" }) }),
-        /* @__PURE__ */ jsx("li", { children: /* @__PURE__ */ jsx("a", { href: "https://rules-jovenes-ipdc.netlify.app", target: "_blank", className: activeOption === "option3" ? "active" : "", onClick: () => handleOptionClick("option3"), children: "Reglas " }) })
+        /* @__PURE__ */ jsx("li", { children: /* @__PURE__ */ jsx("a", { href: "https://www.facebook.com/ibpuertadelcielo", "data-text": "Siguenos", target: "_blank", className: activeOption === "option1" ? "active" : "", onClick: () => handleOptionClick("option1"), children: "Siguenos" }) }),
+        /* @__PURE__ */ jsx("li", { children: /* @__PURE__ */ jsx("a", { href: "https://chat.whatsapp.com/ImgZBsoO6WDGvn4UeaS5eP", "data-text": "Grupo de whatsapp", target: "_blank", className: activeOption === "option2" ? "active" : "", onClick: () => handleOptionClick("option2"), children: "Grupo de whatsapp" }) }),
+        /* @__PURE__ */ jsx("li", { children: /* @__PURE__ */ jsx("a", { href: "https://rules-jovenes-ipdc.netlify.app", "data-text": "Reglas", target: "_blank", className: activeOption === "option3" ? "active" : "", onClick: () => handleOptionClick("option3"), children: "Reglas " }) })
       ] }) }),
       /* @__PURE__ */ jsx("div", { className: "toggle togglePst", onClick: toggleMenu })
     ] })
@@ -48545,7 +48545,7 @@ function Container() {
   function toggleTableH() {
     setShowTableH(!showTableH);
   }
-  return /* @__PURE__ */ jsx(Fragment, { children: /* @__PURE__ */ jsxs("div", { className: "container", children: [
+  return /* @__PURE__ */ jsx(Fragment, { children: /* @__PURE__ */ jsxs("div", { className: "mainContainer", children: [
     /* @__PURE__ */ jsx("img", { src: image, draggable: "false", onMouseDown: (e) => e.preventDefault(), alt: "Logo Genero" }),
     /* @__PURE__ */ jsx("h2", { children: "A Cual Equipo Perteneces?👀" }),
     /* @__PURE__ */ jsxs("div", { className: "cont-num", children: [

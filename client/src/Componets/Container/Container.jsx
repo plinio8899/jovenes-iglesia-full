@@ -23,7 +23,7 @@ export function Container() {
 
   return (
     <>
-      <div className="container">
+      <div className="mainContainer">
         <img src={image} draggable="false" onMouseDown={(e) => e.preventDefault()} alt="Logo Genero" />
         <h2>A Cual Equipo Perteneces?👀</h2>
         <div className="cont-num">
