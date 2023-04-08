@@ -1,7 +1,11 @@
-import {Spinner} from 'reactstrap'
-import 'bootstrap/dist/css/bootstrap.min.css'
+import './Loading.css'
 export function Loading(){
     return(
-        <Spinner type='border' className='m-5' color='light'/>
+        <div class="loader loader-2">
+      <svg class="loader-star" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1">
+            <polygon points="29.8 0.3 22.8 21.8 0 21.8 18.5 35.2 11.5 56.7 29.8 43.4 48.2 56.7 41.2 35.1 59.6 21.8 36.8 21.8 " fill="#18ffff"></polygon>
+         </svg>
+      <div class="loader-circles"></div>
+    </div>
     )
 }
