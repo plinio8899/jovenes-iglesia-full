@@ -1,9 +1,9 @@
 import {createPool} from 'mysql2/promise'
 
 export const pool = createPool({
-    host: 'containers-us-west-5.railway.app',
-    port: 5584,
-    user: 'root',
-    password: 'V3UZXcsJKpIJgBnchgwz',
-    database:'railway'
+    host: process.env.HOST,
+    port: process.env.DB_PORT,
+    user: process.env.DB_USER,
+    password: process.env.DB_PASS,
+    database: process.env.MSQ_NAME
 })
