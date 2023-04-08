@@ -7647,9 +7647,9 @@ function Header() {
     ] }) }),
     showMenu && /* @__PURE__ */ jsxs("div", { className: "mobile-menu", children: [
       /* @__PURE__ */ jsx("div", { className: "nav-links-mobile", children: /* @__PURE__ */ jsxs("ul", { children: [
-        /* @__PURE__ */ jsx("li", { children: /* @__PURE__ */ jsx("a", { href: "https://www.facebook.com/ibpuertadelcielo", target: "_blank", className: activeOption === "option1" ? "active" : "", onClick: () => handleOptionClick("option1"), children: "Siguenos" }) }),
-        /* @__PURE__ */ jsx("li", { children: /* @__PURE__ */ jsx("a", { href: "https://chat.whatsapp.com/ImgZBsoO6WDGvn4UeaS5eP", target: "_blank", className: activeOption === "option2" ? "active" : "", onClick: () => handleOptionClick("option2"), children: "Grupo de whatsapp" }) }),
-        /* @__PURE__ */ jsx("li", { children: /* @__PURE__ */ jsx("a", { href: "https://rules-jovenes-ipdc.netlify.app", target: "_blank", className: activeOption === "option3" ? "active" : "", onClick: () => handleOptionClick("option3"), children: "Reglas " }) })
+        /* @__PURE__ */ jsx("li", { children: /* @__PURE__ */ jsx("a", { href: "https://www.facebook.com/ibpuertadelcielo", "data-text": "Siguenos", target: "_blank", className: activeOption === "option1" ? "active" : "", onClick: () => handleOptionClick("option1"), children: "Siguenos" }) }),
+        /* @__PURE__ */ jsx("li", { children: /* @__PURE__ */ jsx("a", { href: "https://chat.whatsapp.com/ImgZBsoO6WDGvn4UeaS5eP", "data-text": "Grupo de whatsapp", target: "_blank", className: activeOption === "option2" ? "active" : "", onClick: () => handleOptionClick("option2"), children: "Grupo de whatsapp" }) }),
+        /* @__PURE__ */ jsx("li", { children: /* @__PURE__ */ jsx("a", { href: "https://rules-jovenes-ipdc.netlify.app", "data-text": "Reglas", target: "_blank", className: activeOption === "option3" ? "active" : "", onClick: () => handleOptionClick("option3"), children: "Reglas " }) })
       ] }) }),
       /* @__PURE__ */ jsx("div", { className: "toggle togglePst", onClick: toggleMenu })
     ] })
@@ -23673,7 +23673,7 @@ function _defineProperty(obj, key2, value2) {
   }
   return obj;
 }
-function _objectWithoutPropertiesLoose$1(source, excluded) {
+function _objectWithoutPropertiesLoose(source, excluded) {
   if (source == null)
     return {};
   var target = {};
@@ -23687,10 +23687,10 @@ function _objectWithoutPropertiesLoose$1(source, excluded) {
   }
   return target;
 }
-function _objectWithoutProperties$1(source, excluded) {
+function _objectWithoutProperties(source, excluded) {
   if (source == null)
     return {};
-  var target = _objectWithoutPropertiesLoose$1(source, excluded);
+  var target = _objectWithoutPropertiesLoose(source, excluded);
   var key2, i;
   if (Object.getOwnPropertySymbols) {
     var sourceSymbolKeys = Object.getOwnPropertySymbols(source);
@@ -23759,7 +23759,7 @@ var useLottie = function useLottie2(props, style) {
   props.name;
   props.assetsPath;
   props.rendererSettings;
-  var rest = _objectWithoutProperties$1(props, _excluded$1);
+  var rest = _objectWithoutProperties(props, _excluded$1);
   var _useState = reactExports.useState(false), _useState2 = _slicedToArray(_useState, 2), animationLoaded = _useState2[0], setAnimationLoaded = _useState2[1];
   var animationInstanceRef = reactExports.useRef();
   var animationContainer = reactExports.useRef(null);
@@ -24074,10 +24074,10 @@ var useLottieInteractivity = function useLottieInteractivity2(_ref4) {
   });
   return View;
 };
-var _excluded$2 = ["style", "interactivity"];
+var _excluded = ["style", "interactivity"];
 var Lottie = function Lottie2(props) {
   var _a, _b, _c;
-  var style = props.style, interactivity = props.interactivity, lottieProps = _objectWithoutProperties$1(props, _excluded$2);
+  var style = props.style, interactivity = props.interactivity, lottieProps = _objectWithoutProperties(props, _excluded);
   var _useLottie = useLottie(lottieProps, style), View = _useLottie.View, play = _useLottie.play, stop = _useLottie.stop, pause = _useLottie.pause, setSpeed = _useLottie.setSpeed, goToAndStop = _useLottie.goToAndStop, goToAndPlay = _useLottie.goToAndPlay, setDirection = _useLottie.setDirection, playSegments = _useLottie.playSegments, setSubframe = _useLottie.setSubframe, getDuration = _useLottie.getDuration, destroy = _useLottie.destroy, animationContainerRef = _useLottie.animationContainerRef, animationLoaded = _useLottie.animationLoaded, animationItem = _useLottie.animationItem;
   reactExports.useEffect(function() {
     if (props.lottieRef) {
@@ -48223,242 +48223,12 @@ const SvgGirl = {
   layers,
   markers
 };
-var propTypesExports = {};
-var propTypes$1 = {
-  get exports() {
-    return propTypesExports;
-  },
-  set exports(v2) {
-    propTypesExports = v2;
-  }
-};
-var ReactPropTypesSecret$1 = "SECRET_DO_NOT_PASS_THIS_OR_YOU_WILL_BE_FIRED";
-var ReactPropTypesSecret_1 = ReactPropTypesSecret$1;
-var ReactPropTypesSecret = ReactPropTypesSecret_1;
-function emptyFunction() {
-}
-function emptyFunctionWithReset() {
-}
-emptyFunctionWithReset.resetWarningCache = emptyFunction;
-var factoryWithThrowingShims = function() {
-  function shim(props, propName, componentName, location, propFullName, secret) {
-    if (secret === ReactPropTypesSecret) {
-      return;
-    }
-    var err = new Error(
-      "Calling PropTypes validators directly is not supported by the `prop-types` package. Use PropTypes.checkPropTypes() to call them. Read more at http://fb.me/use-check-prop-types"
-    );
-    err.name = "Invariant Violation";
-    throw err;
-  }
-  shim.isRequired = shim;
-  function getShim() {
-    return shim;
-  }
-  var ReactPropTypes = {
-    array: shim,
-    bigint: shim,
-    bool: shim,
-    func: shim,
-    number: shim,
-    object: shim,
-    string: shim,
-    symbol: shim,
-    any: shim,
-    arrayOf: getShim,
-    element: shim,
-    elementType: shim,
-    instanceOf: getShim,
-    node: shim,
-    objectOf: getShim,
-    oneOf: getShim,
-    oneOfType: getShim,
-    shape: getShim,
-    exact: getShim,
-    checkPropTypes: emptyFunctionWithReset,
-    resetWarningCache: emptyFunction
-  };
-  ReactPropTypes.PropTypes = ReactPropTypes;
-  return ReactPropTypes;
-};
-{
-  propTypes$1.exports = factoryWithThrowingShims();
-}
-var classnamesExports = {};
-var classnames = {
-  get exports() {
-    return classnamesExports;
-  },
-  set exports(v2) {
-    classnamesExports = v2;
-  }
-};
-/*!
-	Copyright (c) 2018 Jed Watson.
-	Licensed under the MIT License (MIT), see
-	http://jedwatson.github.io/classnames
-*/
-(function(module2) {
-  (function() {
-    var hasOwn = {}.hasOwnProperty;
-    function classNames2() {
-      var classes = [];
-      for (var i = 0; i < arguments.length; i++) {
-        var arg = arguments[i];
-        if (!arg)
-          continue;
-        var argType = typeof arg;
-        if (argType === "string" || argType === "number") {
-          classes.push(arg);
-        } else if (Array.isArray(arg)) {
-          if (arg.length) {
-            var inner = classNames2.apply(null, arg);
-            if (inner) {
-              classes.push(inner);
-            }
-          }
-        } else if (argType === "object") {
-          if (arg.toString !== Object.prototype.toString && !arg.toString.toString().includes("[native code]")) {
-            classes.push(arg.toString());
-            continue;
-          }
-          for (var key2 in arg) {
-            if (hasOwn.call(arg, key2) && arg[key2]) {
-              classes.push(key2);
-            }
-          }
-        }
-      }
-      return classes.join(" ");
-    }
-    if (module2.exports) {
-      classNames2.default = classNames2;
-      module2.exports = classNames2;
-    } else {
-      window.classNames = classNames2;
-    }
-  })();
-})(classnames);
-const classNames = classnamesExports;
-function _typeof(obj) {
-  "@babel/helpers - typeof";
-  return _typeof = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function(obj2) {
-    return typeof obj2;
-  } : function(obj2) {
-    return obj2 && "function" == typeof Symbol && obj2.constructor === Symbol && obj2 !== Symbol.prototype ? "symbol" : typeof obj2;
-  }, _typeof(obj);
-}
-var globalCssModule;
-function mapToCssModules() {
-  var className = arguments.length > 0 && arguments[0] !== void 0 ? arguments[0] : "";
-  var cssModule = arguments.length > 1 && arguments[1] !== void 0 ? arguments[1] : globalCssModule;
-  if (!cssModule)
-    return className;
-  return className.split(" ").map(function(c) {
-    return cssModule[c] || c;
-  }).join(" ");
-}
-var Element = (typeof window === "undefined" ? "undefined" : _typeof(window)) === "object" && window.Element || function() {
-};
-function DOMElement(props, propName, componentName) {
-  if (!(props[propName] instanceof Element)) {
-    return new Error("Invalid prop `" + propName + "` supplied to `" + componentName + "`. Expected prop to be an instance of Element. Validation failed.");
-  }
-}
-propTypesExports.oneOfType([propTypesExports.string, propTypesExports.func, DOMElement, propTypesExports.shape({
-  current: propTypesExports.any
-})]);
-var tagPropType = propTypesExports.oneOfType([propTypesExports.func, propTypesExports.string, propTypesExports.shape({
-  $$typeof: propTypesExports.symbol,
-  render: propTypesExports.func
-}), propTypesExports.arrayOf(propTypesExports.oneOfType([propTypesExports.func, propTypesExports.string, propTypesExports.shape({
-  $$typeof: propTypesExports.symbol,
-  render: propTypesExports.func
-})]))]);
-var _excluded = ["className", "cssModule", "type", "size", "color", "children", "tag"];
-function _extends() {
-  _extends = Object.assign ? Object.assign.bind() : function(target) {
-    for (var i = 1; i < arguments.length; i++) {
-      var source = arguments[i];
-      for (var key2 in source) {
-        if (Object.prototype.hasOwnProperty.call(source, key2)) {
-          target[key2] = source[key2];
-        }
-      }
-    }
-    return target;
-  };
-  return _extends.apply(this, arguments);
-}
-function _objectWithoutProperties(source, excluded) {
-  if (source == null)
-    return {};
-  var target = _objectWithoutPropertiesLoose(source, excluded);
-  var key2, i;
-  if (Object.getOwnPropertySymbols) {
-    var sourceSymbolKeys = Object.getOwnPropertySymbols(source);
-    for (i = 0; i < sourceSymbolKeys.length; i++) {
-      key2 = sourceSymbolKeys[i];
-      if (excluded.indexOf(key2) >= 0)
-        continue;
-      if (!Object.prototype.propertyIsEnumerable.call(source, key2))
-        continue;
-      target[key2] = source[key2];
-    }
-  }
-  return target;
-}
-function _objectWithoutPropertiesLoose(source, excluded) {
-  if (source == null)
-    return {};
-  var target = {};
-  var sourceKeys = Object.keys(source);
-  var key2, i;
-  for (i = 0; i < sourceKeys.length; i++) {
-    key2 = sourceKeys[i];
-    if (excluded.indexOf(key2) >= 0)
-      continue;
-    target[key2] = source[key2];
-  }
-  return target;
-}
-var propTypes = {
-  /** Set a custom element for this component */
-  tag: tagPropType,
-  /** Change animation of spinner */
-  type: propTypesExports.oneOf(["border", "grow"]),
-  /** Change size of spinner */
-  size: propTypesExports.oneOf(["sm"]),
-  /** Change color of spinner */
-  color: propTypesExports.oneOf(["primary", "secondary", "success", "danger", "warning", "info", "light", "dark"]),
-  /** Add custom class */
-  className: propTypesExports.string,
-  /** Change existing className with a new className */
-  cssModule: propTypesExports.object,
-  /** Pass children so this component can wrap the child elements */
-  children: propTypesExports.string
-};
-var defaultProps = {
-  tag: "div",
-  type: "border",
-  children: "Loading..."
-};
-function Spinner(props) {
-  var className = props.className, cssModule = props.cssModule, type = props.type, size = props.size, color = props.color, children = props.children, Tag = props.tag, attributes = _objectWithoutProperties(props, _excluded);
-  var classes = mapToCssModules(classNames(className, size ? "spinner-".concat(type, "-").concat(size) : false, "spinner-".concat(type), color ? "text-".concat(color) : false), cssModule);
-  return /* @__PURE__ */ React.createElement(Tag, _extends({
-    role: "status"
-  }, attributes, {
-    className: classes
-  }), children && /* @__PURE__ */ React.createElement("span", {
-    className: mapToCssModules("visually-hidden", cssModule)
-  }, children));
-}
-Spinner.propTypes = propTypes;
-Spinner.defaultProps = defaultProps;
-const bootstrap_min = "";
+const Loading$1 = "";
 function Loading() {
-  return /* @__PURE__ */ jsx(Spinner, { type: "border", className: "m-5", color: "light" });
+  return /* @__PURE__ */ jsxs("div", { class: "loader loader-2", children: [
+    /* @__PURE__ */ jsx("svg", { class: "loader-star", xmlns: "http://www.w3.org/2000/svg", "xmlns:xlink": "http://www.w3.org/1999/xlink", version: "1.1", children: /* @__PURE__ */ jsx("polygon", { points: "29.8 0.3 22.8 21.8 0 21.8 18.5 35.2 11.5 56.7 29.8 43.4 48.2 56.7 41.2 35.1 59.6 21.8 36.8 21.8 ", fill: "#18ffff" }) }),
+    /* @__PURE__ */ jsx("div", { class: "loader-circles" })
+  ] });
 }
 function Marcador() {
   const url = "/h-points/";
@@ -48545,7 +48315,7 @@ function Container() {
   function toggleTableH() {
     setShowTableH(!showTableH);
   }
-  return /* @__PURE__ */ jsx(Fragment, { children: /* @__PURE__ */ jsxs("div", { className: "container", children: [
+  return /* @__PURE__ */ jsx(Fragment, { children: /* @__PURE__ */ jsxs("div", { className: "mainContainer", children: [
     /* @__PURE__ */ jsx("img", { src: image, draggable: "false", onMouseDown: (e) => e.preventDefault(), alt: "Logo Genero" }),
     /* @__PURE__ */ jsx("h2", { children: "A Cual Equipo Perteneces?👀" }),
     /* @__PURE__ */ jsxs("div", { className: "cont-num", children: [
