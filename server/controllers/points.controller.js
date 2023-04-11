@@ -1,5 +1,5 @@
-import {point_agg_m} from '../models/schema_points_m.js'
-import {point_agg} from '../models/schema_points.js'
+import {point_agg_m} from '../Models/schema_points_m.js'
+import {point_agg} from '../Models/schema_points.js'
 
 export const postHpoints = async (req, res) => {
     const body = req.body
